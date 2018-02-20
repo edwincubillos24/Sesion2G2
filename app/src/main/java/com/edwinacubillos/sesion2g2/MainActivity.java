@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //metodo para el button
     public void onButtonClicked(View view) {
         nombre = eNombre.getText().toString();
         eCorreo.setText(nombre);
