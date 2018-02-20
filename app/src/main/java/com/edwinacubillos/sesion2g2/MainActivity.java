@@ -2,10 +2,12 @@ package com.edwinacubillos.sesion2g2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
     //metodo para el button
     public void onButtonClicked(View view) {
         nombre = eNombre.getText().toString();
+        Log.d("nombre digitado",nombre);
+
+        Toast.makeText(this, nombre,
+                Toast.LENGTH_LONG).show();
+
         eCorreo.setText(nombre);
     }
 
