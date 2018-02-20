@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         eCorreo.setText(nombre);
     }
 
+    //metodo para el radioButton
     public void onRadioButtonClicked(View view) {
         int id = view.getId();
 
